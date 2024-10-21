@@ -20,6 +20,7 @@ public class VehicleDetails {
     @PositiveOrZero(message = "cant be negative")
     private Float price;
     @Past(message = "between 1886 and now")
+    @Pattern("(/d{1,2}V\d{1,2}\/\d{4}")
     private int yearOfManufacture;
     @Positive(message = "must be positive")
     private int mileage;
